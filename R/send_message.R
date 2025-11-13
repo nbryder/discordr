@@ -23,13 +23,13 @@ send_discord_message <- function(webhook_url, message, username = "R Bot") {
     url = webhook_url,
     body = jsonlite::toJSON(payload, auto_unbox = TRUE),
     encode = "json",
-    content_type_json()
+    httr::content_type_json()
   )
 
-  if (status_code(response) == 204) {
+  if (httr::status_code(response) == 204) {
     message("Message sent successfully to Discord!")
   } else {
-    warning("Failed to send message. Status code: ", status_code(response))
+    warning("Failed to send message. Status code: ", httr::status_code(response))
   }
 
   return(invisible(response))
