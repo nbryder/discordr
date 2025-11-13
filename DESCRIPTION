@@ -1,0 +1,19 @@
+Package: discordr
+Title: Send Messages and Files to Discord from R
+Version: 0.0.0.9000
+Authors@R: 
+    person("Nicklas", "Bryder", , "Nicklas.Bryder@gmail.com", role = "cre")
+Description: Provides functions to send messages, embeds, and files to Discord 
+    webhooks directly from R. Useful for monitoring long-running analyses, 
+    sending notifications, and sharing results.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports:
+    httr,
+    jsonlite
+Suggests: 
+    testthat (>= 3.0.0),
+    ggplot2
+Config/testthat/edition: 3
