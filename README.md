@@ -1,0 +1,31 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# discordr
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of discordr is to ease the sending of messages from R sessions
+to discord servers. Current implementations allow for messages, embeds
+and files to be send.
+
+## Installation
+
+You can install the development version of discordr from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("nbryder/discordr")
+```
+
+## Note
+
+The functionality assumes that you are able to generate a webhook for
+your discord server, google instructions if you are unaware of how to to
+this. The webhook URL should never be stored in published documents, for
+the purpose of this tutorial it is assumed you have it stored as
+DISCORD_HOOK_URL in an .renviron file.
+
+## 
