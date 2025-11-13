@@ -1,6 +1,6 @@
 Package: discordr
 Title: Send Messages and Files to Discord from R
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: 
     person("Nicklas", "Bryder", , "Nicklas.Bryder@gmail.com", role = "cre")
 Description: Provides functions to send messages, embeds, and files to Discord 
