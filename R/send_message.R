@@ -19,9 +19,9 @@ send_discord_message <- function(webhook_url, message, username = "R Bot") {
     username = username
   )
 
-  response <- POST(
+  response <- httr::POST(
     url = webhook_url,
-    body = toJSON(payload, auto_unbox = TRUE),
+    body = jsonlite::toJSON(payload, auto_unbox = TRUE),
     encode = "json",
     content_type_json()
   )
