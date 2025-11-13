@@ -20,7 +20,7 @@
 send_discord_file <- function(webhook_url, file_path, message = NULL, username = "R Bot") {
 
   # Read file
-  file_content <- upload_file(file_path)
+  file_content <- httr::upload_file(file_path)
 
   # Create body
   body <- list(
@@ -33,16 +33,16 @@ send_discord_file <- function(webhook_url, file_path, message = NULL, username =
 
   body$username <- username
 
-  response <- POST(
+  response <- httr::POST(
     url = webhook_url,
     body = body,
     encode = "multipart"
   )
 
-  if (status_code(response) == 200) {
+  if (httr::status_code(response) == 200) {
     message("File uploaded successfully to Discord!")
   } else {
-    warning("Failed to upload file. Status code: ", status_code(response))
+    warning("Failed to upload file. Status code: ", httr::status_code(response))
   }
 
   return(invisible(response))
