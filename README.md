@@ -8,7 +8,7 @@
 
 The goal of discordr is to ease the sending of messages from R sessions
 to discord servers. Current implementations allow for messages, embeds
-and files to be send.
+and files to be sent.
 
 ## Installation
 
