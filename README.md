@@ -22,7 +22,7 @@ You can install the development version of discordr from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("yourusername/discordr")
+devtools::install_github("nbryder/discordr")
 ```
 
 ## Setup
